@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Apresente-se para nós</h1>
+    </header>
+    <section>
+        <form action="cad.php" method="get"> <!--"action" me diz que esse formulário irá para um arquivo chamado cad.php, o "get" indica que o array/vetor formado se chamará _GET ($_GET)-->
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="idnome"><!--input tipo text--><!--array/vetor chamado nome na posição [0]-->
+            <label for="sobrenome">Sobrenome</label> 
+            <input type="text" name="sobrenome" id="idsobrenome"><!--array/vetor chamado sobrenome na posição [1]-->
+            <input type="submit" value="ENVIAR"> <!--o type submit é o com o botão de enviar. value é o que estará escrito no botão-->
+        </form> 
+    </section>
+    
+</body>
+</html>
